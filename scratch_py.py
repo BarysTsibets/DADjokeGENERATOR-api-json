@@ -1,3 +1,5 @@
+"""DAD joke generator =)"""
+
 import requests
 import random
 from pyfiglet import figlet_format
@@ -7,8 +9,8 @@ from termcolor import colored
 URL = "https://icanhazdadjoke.com/search"
 header = figlet_format("DAD joke 3000!")
 header = colored(header, color="magenta")
-
 print("If u want to stop my Jokes input 'z'")
+
 
 def dad_joke():
     r = requests.get(URL, headers={'Accept': 'application/json'},
